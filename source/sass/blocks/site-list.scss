@@ -25,6 +25,7 @@
     &:active span {
         opacity: 0.3;
     }
+    z-index: 10;
 }
 
 .site-list__item--active {
@@ -64,12 +65,13 @@
     }
 }
 
-@media (min-width: 1440px) {
+
+
+@media (min-width: 1100px) {
     .site-list {
         width: 478px;
         font-size: 20px;
-        //Временный чёрный фон
-        background-color: #000;
+        z-index: 10;
     }
 
     .site-list__item {
