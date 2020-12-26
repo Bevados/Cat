@@ -234,6 +234,130 @@ button {
     height: 2px;
     background-color: #fff; } }
 
+.page__footer {
+  margin: 0 auto;
+  padding: 39px 20px 22px;
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center; }
+
+.page__footer__logo {
+  padding-bottom: 31px;
+  width: 100%;
+  line-height: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.page__footer__logo-link {
+  display: inline-block;
+  pointer-events: none; }
+  .page__footer__logo-link:hover {
+    opacity: 0.8; }
+  .page__footer__logo-link:active {
+    opacity: 0.6; }
+
+.page__footer__social {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 0; }
+
+.page__footer__social-list {
+  margin: 0 auto;
+  width: 125px;
+  display: flex; }
+  .page__footer__social-list svg {
+    fill: #666666; }
+
+.page__footer__social-item:first-child {
+  margin-right: 37px; }
+  .page__footer__social-item:first-child a {
+    padding-top: 4px; }
+
+.page__footer__social-item:nth-child(2) {
+  margin-right: 40px; }
+  .page__footer__social-item:nth-child(2) a {
+    padding-top: 2px; }
+
+.page__footer__social-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  outline: none; }
+  .page__footer__social-item a:hover svg {
+    fill: #68b738; }
+  .page__footer__social-item a:active {
+    opacity: 0.3; }
+
+.page__footer__htmlacademy {
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between; }
+  .page__footer__htmlacademy:hover .page__footer__htmlacademy-logo {
+    fill: #68b738; }
+  .page__footer__htmlacademy:active {
+    opacity: 0.3; }
+
+.page__footer__htmlacademy-name {
+  padding-top: 7px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444; }
+
+.page__footer__htmlacademy-logo {
+  fill: #666666; }
+
+@media (min-width: 700px) {
+  .page__footer {
+    padding: 60px 30px 56px;
+    display: flex; }
+  .page__footer__logo {
+    padding: 0;
+    padding-top: 4px;
+    width: 33.333%;
+    border: none;
+    text-align: start; }
+  .page__footer__social {
+    padding: 0;
+    width: 33.333%;
+    border: none; }
+  .page__footer__social-list {
+    width: 124px; }
+  .page__footer__social-item:first-child {
+    margin-right: 28px; }
+    .page__footer__social-item:first-child a {
+      padding-top: 6px; }
+  .page__footer__social-item:nth-child(2) {
+    margin-right: 29px; }
+    .page__footer__social-item:nth-child(2) a {
+      padding-top: 3px; }
+  .page__footer__social-vkontakte {
+    width: 30px;
+    height: 16px; }
+  .page__footer__social-instagtam {
+    width: 23px;
+    height: 23px; }
+  .page__footer__social-facebook {
+    width: 14px;
+    height: 28px; }
+  .page__footer__htmlacademy {
+    padding-top: 0;
+    width: 33.333%;
+    text-align: end;
+    justify-content: stretch; }
+  .page__footer__htmlacademy-name {
+    margin-right: 23px;
+    margin-left: auto;
+    padding-top: 5px; } }
+
+@media (min-width: 1250px) {
+  .page__footer {
+    padding: 59px 110px 56px; } }
+
 .program {
   margin: 0 auto;
   min-width: 320px;
@@ -556,6 +680,7 @@ button {
   .program__tagline {
     margin-bottom: 52px; }
   .program__available {
+    padding-bottom: 76px;
     display: flex;
     gap: 80px; }
   .program__slimming {
@@ -1200,3 +1325,122 @@ button {
   .example__wrapper {
     padding-right: 70px;
     padding-left: 110px; } }
+
+.contacts {
+  margin: 0 auto;
+  position: relative;
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #fff; }
+
+.contacts__address {
+  padding: 28px 20px 26px;
+  display: flex;
+  width: 100%;
+  background-color: #fff; }
+
+.contacts__dealer {
+  width: 50%;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111;
+  text-transform: uppercase; }
+
+.contacts__coordinates {
+  width: 50%;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #444; }
+  .contacts__coordinates span {
+    display: block; }
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  line-height: 0; }
+  .contacts__map::before {
+    content: '';
+    position: absolute;
+    top: 139px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 45px;
+    height: 53px;
+    background-image: url("../img/map-pin-mob.png");
+    background-repeat: no-repeat; }
+
+.contacts__map-picture {
+  display: inline-block;
+  width: 100%;
+  height: 362px;
+  overflow: hidden; }
+
+.contacts__map-img {
+  width: 100%;
+  height: 362px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom; }
+
+@media (min-width: 321px) {
+  .contacts__map::before {
+    top: 199px; }
+  .contacts__map-picture {
+    height: 396px; }
+  .contacts__map-img {
+    height: 396px; } }
+
+@media (min-width: 700px) {
+  .contacts__address {
+    padding: 62px 30px 59px; }
+  .contacts__dealer {
+    padding-top: 3px;
+    padding-left: 42px;
+    font-size: 20px;
+    line-height: 25px; }
+  .contacts__coordinates {
+    padding-right: 42px;
+    font-size: 16px;
+    text-align: end; }
+    .contacts__coordinates span {
+      margin-top: 20px; }
+  .contacts__map::before {
+    top: 146px;
+    width: 90px;
+    height: 106px;
+    background-image: url("../img/map-pin.png"); } }
+
+@media (min-width: 769px) {
+  .contacts__map::before {
+    left: auto;
+    transform: translateX(0);
+    right: 337px;
+    top: 150px; }
+  .contacts__map-picture {
+    height: 399px; }
+  .contacts__map-img {
+    height: 399px;
+    -o-object-position: right bottom;
+       object-position: right bottom; } }
+
+@media (min-width: 1200px) {
+  .contacts__address {
+    padding: 62px 76px 59px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    z-index: 2; }
+  .contacts__dealer {
+    padding-left: 0; }
+  .contacts__coordinates {
+    padding-right: 0;
+    padding-left: 40px;
+    text-align: start; } }
