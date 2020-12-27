@@ -1592,15 +1592,6 @@ button {
     align-items: flex-end;
     gap: 58px 60px;
     border: none; }
-    .main-product__list:after {
-      content: '';
-      padding-right: 37px;
-      padding-left: 37px;
-      min-width: 245px;
-      max-width: 324px;
-      width: 245px;
-      box-sizing: border-box;
-      flex-grow: 1; }
   .main-product__item {
     padding: 0;
     padding-right: 37px;
@@ -1672,12 +1663,294 @@ button {
     padding-right: 30px;
     padding-left: 30px; } }
 
+@media (min-width: 915px) {
+  .main-product__list:after {
+    content: '';
+    padding-right: 37px;
+    padding-left: 37px;
+    min-width: 245px;
+    max-width: 324px;
+    width: 245px;
+    line-height: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    flex-grow: 1; } }
+
 @media (min-width: 1100px) {
   .main-product__list {
     gap: 60px 80px; } }
+
+@media (min-width: 1280px) {
+  .main-product__list:after {
+    display: none; } }
 
 @media (min-width: 1440px) {
   .main-product {
     margin-bottom: 76px;
     padding-right: 110px;
     padding-left: 110px; } }
+
+.additional-product {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  position: relative;
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #fff; }
+
+.additional-product__title-wrap {
+  margin-bottom: 33px;
+  position: relative;
+  min-height: 24px; }
+  .additional-product__title-wrap::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #68b738;
+    z-index: 1; }
+
+.additional-product__title {
+  padding-right: 25px;
+  padding-left: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111;
+  background-color: #fff;
+  z-index: 3; }
+
+.additional-product__list-wrap {
+  margin-bottom: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%; }
+
+.additional-product__list {
+  width: 100%; }
+
+.additional-product__item {
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd; }
+  .additional-product__item:first-child {
+    border-top: 1px solid #cdcdcd; }
+
+.additional-product__item-wrap {
+  padding-top: 13px;
+  padding-bottom: 17px; }
+
+.additional-product__item-title {
+  margin-bottom: 13px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase; }
+
+.additional-product__item-volume {
+  margin-bottom: 15px;
+  display: flex;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #444; }
+  .additional-product__item-volume span {
+    margin-left: auto; }
+
+.additional-product__item-order {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #68b738;
+  text-transform: uppercase; }
+  .additional-product__item-order:hover {
+    background-color: #5eaa2f; }
+  .additional-product__item-order:active {
+    color: rgba(255, 255, 255, 0.3); }
+
+.additional-product__gift {
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative; }
+  .additional-product__gift::before {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/catalog/gift.png"); }
+
+.additional-product__gift-text {
+  padding-top: 186px;
+  padding-bottom: 43px;
+  display: inline-block;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background-image: url("../img/catalog/gift-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .additional-product__gift-text {
+    background-image: url("../img/catalog/gift-bg-mobile_2x.jpg"); } }
+
+.contacts__address {
+  background-color: #f2f2f2; }
+
+@media (min-width: 500px) {
+  .additional-product__list {
+    border: 1px solid #e6e6e6; }
+  .additional-product__item {
+    border-bottom: 1px solid #d9d9d9; }
+    .additional-product__item:first-child {
+      border-top: none; }
+    .additional-product__item:last-child {
+      border-bottom: none; }
+  .additional-product__item-wrap {
+    padding: 26px 36px 27px 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .additional-product__item-volume {
+    width: auto; }
+    .additional-product__item-volume span {
+      margin-left: 52px; }
+  .additional-product__gift::before {
+    top: 65px;
+    left: 50%;
+    transform: translateX(-200%); }
+  .additional-product__gift-text {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    padding-left: 59.887%;
+    text-align: start;
+    background-image: url("../img/catalog/gift-bg-tablet.jpg"); } }
+
+@media (min-width: 500px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 500px) and (min-resolution: 1.5dppx) {
+  .additional-product__gift-text {
+    background-image: url("../img/catalog/gift-bg-tablet_2x.jpg"); } }
+
+@media (min-width: 620px) {
+  .additional-product {
+    margin-bottom: 76px; }
+  .additional-product__list {
+    margin-bottom: 69px; }
+  .additional-product__title-wrap {
+    margin-bottom: 79px;
+    min-height: 36px; }
+    .additional-product__title-wrap::before {
+      top: 21px; }
+  .additional-product__title {
+    margin-left: 30px;
+    padding-right: 38px;
+    padding-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #111; }
+  .additional-product__item-title {
+    margin-bottom: 23px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    line-height: 20px; }
+  .additional-product__item-volume {
+    margin-bottom: 23px;
+    padding-bottom: 2;
+    font-size: 16px;
+    line-height: 20px; } }
+
+@media (min-width: 620px) {
+  .additional-product__gift::before {
+    transform: translateX(-263px); } }
+
+@media (min-width: 768px) {
+  .additional-product__list-wrap {
+    padding-right: 30px;
+    padding-left: 30px; } }
+
+@media (min-width: 1240px) {
+  .additional-product {
+    margin-bottom: 86px; }
+  .additional-product__title-wrap {
+    height: 36px;
+    width: 100%; }
+  .additional-product__content {
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 1180px;
+    max-width: 1220px;
+    box-sizing: content-box; }
+  .additional-product__list-wrap {
+    margin-bottom: 0;
+    padding: 0;
+    width: 895px; }
+  .additional-product__list {
+    margin-bottom: 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd; }
+  .additional-product__item-wrap {
+    padding: 15px 0 16px; }
+  .additional-product__item-title {
+    margin-bottom: 0;
+    padding-top: 11px;
+    width: 285px; }
+  .additional-product__item-volume {
+    margin-bottom: 0;
+    padding-top: 13px;
+    width: 285px; }
+    .additional-product__item-volume span {
+      margin-left: auto; }
+  .additional-product__item-order {
+    width: 245px; }
+  .additional-product__gift {
+    padding: 0;
+    width: 245px; }
+    .additional-product__gift::before {
+      transform: translateX(-50%); }
+  .additional-product__gift-text {
+    padding-top: 186px;
+    padding-bottom: 43px;
+    padding-left: 0;
+    text-align: center;
+    background-image: url("../img/catalog/gift-bg-desktop.jpg"); } }
+
+@media (min-width: 1240px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1240px) and (min-resolution: 1.5dppx) {
+  .additional-product__gift-text {
+    background-image: url("../img/catalog/gift-bg-desktop_2x.jpg"); } }
+
+@media (min-width: 1200px) {
+  .contacts__address {
+    background-color: #fff; } }
+
+@media (min-width: 1240px) {
+  .additional-product__title {
+    margin-left: 70px;
+    padding-left: 40px; } }
