@@ -1,0 +1,22 @@
+.catalog-title {
+    margin: 0 auto;
+    padding: 16px 20px 27px;
+    min-width: 320px;
+    max-width: 1440px;
+    width: 100%;
+    @include font('Oswald', 36px, 60px, 400, #111);
+    background-color: #fff;
+}
+
+@media (min-width: 700px) {
+    .catalog-title {
+        padding: 61px 30px 80px;
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .catalog-title {
+        padding: 49px 110px 81px;
+    }
+}

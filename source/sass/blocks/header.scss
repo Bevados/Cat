@@ -31,6 +31,11 @@
     }
 }
 
+.catalog-header .page-header__logo-link,
+.form-header .page-header__logo-link {
+    pointer-events: auto;
+}
+
 .page-header__logo {
     display: inline-block;
     line-height: 0;
@@ -136,7 +141,11 @@
         background-image: url('../img/program-bg-deck.jpg');
         background-repeat: no-repeat;
         background-size: contain;
-        
+    }
+
+    .catalog-header::after,
+    .form-header::after {
+        display: none;
     }
 }
 

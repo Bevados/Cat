@@ -1,4 +1,4 @@
-.page__footer {
+.page-footer {
     margin: 0 auto;
     padding: 39px 20px 22px;
     min-width: 320px;
@@ -8,14 +8,14 @@
     text-align: center;
 }
 
-.page__footer__logo {
+.page-footer__logo {
     padding-bottom: 31px;
     width: 100%;
     line-height: 0;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1)
 }
 
-.page__footer__logo-link {
+.page-footer__logo-link {
     display: inline-block;
     pointer-events: none;
     &:hover {
@@ -26,7 +26,12 @@
     }
 }
 
-.page__footer__social {
+.catalog-footer .page-footer__logo-link,
+.form-footer .page-footer__logo-link {
+    pointer-events: auto;
+}
+
+.page-footer__social {
     padding-top: 22px;
     padding-bottom: 21px;
     width: 100%;
@@ -35,7 +40,7 @@
 
 }
 
-.page__footer__social-list {
+.page-footer__social-list {
     margin: 0 auto;
     width: 125px;
     display: flex;
@@ -45,7 +50,7 @@
 
 }
 
-.page__footer__social-item {
+.page-footer__social-item {
     &:first-child {
         margin-right: 37px;
         & a {
@@ -72,11 +77,11 @@
     }
 }
 
-.page__footer__htmlacademy {
+.page-footer__htmlacademy {
     padding-top: 22px;
     display: flex;
     justify-content: space-between;
-    &:hover .page__footer__htmlacademy-logo{
+    &:hover .page-footer__htmlacademy-logo{
         fill: #68b738;
     }
     &:active {
@@ -84,22 +89,22 @@
     }
 }
 
-.page__footer__htmlacademy-name {
+.page-footer__htmlacademy-name {
     padding-top: 7px;
     @include font('Arial', 16px, 16px, 400, #444);
 }
 
-.page__footer__htmlacademy-logo {
+.page-footer__htmlacademy-logo {
     fill: #666666;
 }
 
 @media (min-width: 700px) {
-    .page__footer {
+    .page-footer {
         padding: 60px 30px 56px;
         display: flex;
     }
 
-    .page__footer__logo {
+    .page-footer__logo {
         padding: 0;
         padding-top: 4px;
         width: 33.333%;
@@ -107,17 +112,17 @@
         text-align: start;
     }
 
-    .page__footer__social {
+    .page-footer__social {
         padding: 0;
         width: 33.333%;
         border: none;
     }
 
-    .page__footer__social-list {
+    .page-footer__social-list {
         width: 124px;
     }
 
-    .page__footer__social-item {
+    .page-footer__social-item {
         &:first-child {
             margin-right: 28px;
             & a {
@@ -132,29 +137,29 @@
         }
     }
 
-    .page__footer__social-vkontakte {
+    .page-footer__social-vkontakte {
         width: 30px;
         height: 16px;
     }
 
-    .page__footer__social-instagtam {
+    .page-footer__social-instagtam {
         width: 23px;
         height: 23px;
     }
 
-    .page__footer__social-facebook {
+    .page-footer__social-facebook {
         width: 14px;
         height: 28px;
     }
 
-    .page__footer__htmlacademy {
+    .page-footer__htmlacademy {
         padding-top: 0;
         width: 33.333%;
         text-align: end;
         justify-content: stretch;
     }
 
-    .page__footer__htmlacademy-name {
+    .page-footer__htmlacademy-name {
         margin-right: 23px;
         margin-left: auto;
         padding-top: 5px;
@@ -163,7 +168,7 @@
 }
 
 @media (min-width: 1250px) {
-    .page__footer {
+    .page-footer {
         padding: 59px 110px 56px;
     }
 }
